@@ -29,4 +29,10 @@ public class PlayAgain : MonoBehaviour
             SceneManager.LoadScene("Level1");
         }
     }
+
+    void OnResetCount()
+    {
+        PlayerPrefs.SetInt("Wins", 0);
+        winCountText.text = "Puzzles Solved: " + PlayerPrefs.GetInt("Wins");
+    }
 }

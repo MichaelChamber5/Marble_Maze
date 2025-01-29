@@ -21,7 +21,7 @@ public class MazeGeneration : MonoBehaviour
     {
         maze = new int[mazeSize, mazeSize];
         GenerateMaze();
-        PrintMaze(); // For debugging, prints the maze to the console
+        PrintMaze();
     }
 
     void GenerateMaze()

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Net.Http.Headers;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class CameraMovement : MonoBehaviour
@@ -53,5 +54,10 @@ public class CameraMovement : MonoBehaviour
     public Vector3 GetRotation()
     {
         return (centerPoint - offsetVector).normalized;
+    }
+
+    void OnNewMaze()
+    {
+        SceneManager.LoadScene("Level1");
     }
 }
