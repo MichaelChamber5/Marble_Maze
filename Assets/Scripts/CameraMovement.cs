@@ -53,7 +53,7 @@ public class CameraMovement : MonoBehaviour
 
     public Vector3 GetRotation()
     {
-        return (centerPoint - offsetVector).normalized;
+        return -transform.up;
     }
 
     void OnNewMaze()
